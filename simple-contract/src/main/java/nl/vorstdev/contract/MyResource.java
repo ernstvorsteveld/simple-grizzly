@@ -1,4 +1,4 @@
-package com.example.contract;
+package nl.vorstdev.contract;
 
 import com.example.domain.Person;
 

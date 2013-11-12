@@ -2,49 +2,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>nl.vorstdev</groupId>
+    <parent>
+        <groupId>nl.vorstdev</groupId>
+        <artifactId>simple-grizzly</artifactId>
+        <relativePath>..</relativePath>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <artifactId>simple-contract</artifactId>
-    <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-
     <name>Simple Contract</name>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jersey-version>1.17.1</jersey-version>
-        <org.springframework-version>3.1.2.RELEASE</org.springframework-version>
-    </properties>
 
     <dependencies>
         <dependency>
             <groupId>nl.vorstdev</groupId>
             <artifactId>simple-domain</artifactId>
-            <version>0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>javax.ws.rs</groupId>
             <artifactId>javax.ws.rs-api</artifactId>
-            <version>2.0-m15</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.2.1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <mainClass>com.example.server.Server</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

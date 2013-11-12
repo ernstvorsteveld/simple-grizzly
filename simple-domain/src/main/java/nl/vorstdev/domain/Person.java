@@ -1,4 +1,4 @@
-package com.example.domain;
+package nl.vorstdev.domain;
 
 public class Person {
 
